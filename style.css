@@ -1,0 +1,296 @@
+.tab {
+    overflow: hidden;
+    border: 2px solid #cd8f00;
+    background-color: #1e3781;
+    font-size: 100%;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 100%;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.prompt:focus {
+  box-shadow: none!important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #344780;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #06237a;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.prompt {
+    width: 320px;
+    height: 30px;
+    font-size: 110%;
+    padding-left: 2px;
+    margin-bottom: 2px;
+    border-radius: 7px;
+    border:3px solid #cd8f00;
+    background-color: #344780;
+    color:#f2f2f2;
+    font-weight: bold;
+}
+
+.img_magnifier_container {
+    position: relative;
+}
+
+.cardSize {     
+    margin-top: 7px;
+    width: 275px;
+    height: 400px;
+    border: none;
+    margin-left: -13px
+}
+
+.s_cardSize {    
+  width: 275px;
+  height: 400px;
+  border: none;
+  margin-left: -13px;
+}
+
+.loadingImage {
+    padding-top: 5px;
+    text-align: center;
+    border: none;
+}
+
+.loadingText {
+  color: #f2f2f2;
+  background-color: #000000;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  bottom: 8px;
+  width: 100%;
+  font-size: 125%;
+}
+
+.loadingBottomText {
+  color: #f2f2f2;
+  background-color: #000000;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  bottom: 8px;
+  width: 100%;
+  font-size: 100%;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.topPrompt {
+    vertical-align: top;
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border:3px solid #cd8f00;
+    background-color: #344780;
+    color:#f2f2f2;
+    font-weight: bold;
+}
+
+.imgLogo {
+  float: right;
+  height: 40px;
+  width: 40px;
+  padding-top: 3px;
+  padding-right: 5px;
+}
+
+.imgtextLogo {
+  height: 40px;
+  padding-top: 3px;
+}
+.refreshDiv {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+
+}
+
+.refreshButton { 
+  margin-left:39px;
+  font-size: 100%;
+  width: 80%;
+  height: 50px;
+  font-size: 100%;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border:3px solid #cd8f00;
+  background-color: #344780;
+  color:#f2f2f2;
+  font-weight: bold;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 290px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "next button" to the right */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #1e3781;
+  }
+    
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  /* Caption text */
+.slideshowText {
+    color: #f2f2f2;
+    background-color: #000000;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    bottom: 8px;
+    width: 245px;
+    font-size: 125%;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .tcgPrices
+  {
+    margin-top: -7px;
+    text-align: center;
+  }
+
+  .tcgPricesSet
+  {
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  .lowPrice {
+    font-size: small;
+    color: white;
+    padding: 3px;
+    border-radius: 7px;
+    border:2px solid #cd8f00;
+    background-color: #344780;
+  }
+
+  .medPrice {
+    font-size: small;
+    color: white;
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 7px;
+    border:2px solid #cd8f00;
+    background-color: #344780;
+  }
+
+  .highPrice {
+    font-size: small;
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 7px;
+    border:2px solid #cd8f00;
+    background-color: #344780;
+    color:#f2f2f2;
+  }
+
+  .tcgplayerinfo
+  {
+    font-size: small;
+    border-radius: 7px;
+    border:3px solid white;
+    background-color: white;
+  }
+
+  a { color: inherit;} 
+
+  .tcgplayerimg {
+    width: 130px;
+    height: 45px;
+  }

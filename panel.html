@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Viewer Page</title>
+</head>
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; overflow-y: hidden; background-color: #322F37; width: 275px; ">
+    <div class="tab" id="tabHeader" style="display:none;">
+        <button class="tablinks" id="btn_BySet">By Set</button>
+        <button class="tablinks" id="btn_ByCardName">By Card Name</button>
+        <img style="width: 80px; height: 30px; float:right; margin-top: 5px; margin-right: 5px;" src="./images/TextLogo.png"></img>
+    </div>
+    <div class="loading" id="loadingImg">
+        <p class="loadingText" id="loadingTxt">Loading All Pokemon Cards...</p>
+        <p class="loadingImage">
+            <img src="images/loadingGif.gif">
+        </p>  
+        <p class="loadingBottomText">Pokemon Card Viewer - Version 1.0.5</br> Created and Maintained by Dillonzer</p>      
+    </div>
+    <div class="refreshDiv" id="refreshSection">
+        <p class="loadingText">Oh no! Looks like there was an issue loading all cards. Please click the button below to try again!</p>
+        <button class="refreshButton" id="btn_refresh">Refresh</button>  
+    </div>
+    <div id="div_BySet" class="tabcontent" >
+        <select id="setName" class="prompt" style="display:none;vertical-align: top; width: 250px;">
+            <option value="" disabled selected>Please select a Set</option>
+        </select>
+        <select id="cardName" class="prompt" style="display:none; vertical-align: top; width: 250px;">
+            <option value="" disabled selected>Please select a Card</option>
+        </select>
+        <img id="cardImage" class="cardSize" style="display:none;">
+        <div id="tcgPlayerPrices" class="tcgPricesSet">
+        </br>
+            <p>
+                <span id="lowTcgPrice" class="lowPrice">Normal: N/A</span>
+                <span id="medTcgPrice" class="medPrice">Reverse: N/A</span>
+                <span id="highTcgPrice" class="highPrice">Holo: N/A</span>
+            </p>
+            <span class="tcgplayerinfo">Market Prices from TCGPlayer</span>
+        </div>
+    </div>
+    <div id="div_ByCardName" class="tabcontent">
+        <input type="text" id="txt_cardName" class="topPrompt" style="float: left; width: 155px;" placeholder="Card Name">
+        <button class="topPrompt" id="btn_searchCardByName" style="float: right; width: 80px;  ">Search</button>  
+        </br>
+        <div class="slideshow-container" id="slideshow">
+        </div>
+        <a class="prev" id="prevSlide">&#10094;</a>
+        <a class="next" id="nextSlide">&#10095;</a>
+        <div class="loading" id="loadingImg2" style="display:none">
+            <p class="loadingText" id="loadingTxt2">Loading your search...</p>
+            <p class="loadingImage">
+                <img src="images/loadingGif.gif">
+            </p>  
+            <p class="loadingBottomText">Pokemon Card Viewer - Version 1.0.5</br> Created and Maintained by Dillonzer</p>      
+        </div>
+    </div>    
+    
+</body>
+<script src="scripts.js" type="text/javascript"></script>
+</html>
